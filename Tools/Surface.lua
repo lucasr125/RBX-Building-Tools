@@ -127,13 +127,15 @@ function ShowUI()
 	-- Create type dropdown
 	local SurfaceTypes = {
 		'Smooth';
+		'Glue';
+		'Weld';
 		'Studs';
 		'Inlet';
-		'Weld';
+		'Universal';
 		'Hinge';
 		'Motor';
-		'Universal';
-		'Glue';
+		'SteppingMotor';
+		'SmoothNoOutlines';
 	}
 	local function BuildSurfaceTypeDropdown()
 		return Roact.createElement(Dropdown, {
